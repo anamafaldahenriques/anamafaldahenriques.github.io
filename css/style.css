@@ -1,0 +1,69 @@
+html {
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: "athelas",serif;
+}
+
+
+body {
+	width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "athelas",serif;
+}
+
+h5{
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+#bold{
+    font-weight: 700;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+
+/*Navbar*/
+
+.navbar{
+    height: 32px;
+    padding: 16px;
+    padding-top: 8px;
+}
+
+.navbarTable{
+    width: 100%;
+}
+
+/*Content*/
+
+.heroImageWrapper{
+    width: 100%;
+    margin: auto;
+    margin-top: 124px;
+}
+
+.heroImage{
+    width: 560px;
+    margin: auto;
+}
+
+
+/*Responsive*/
+
+@media only screen and (max-width: 768px) {
+    
+    
+    h5{
+        font-size: 7px;
+    }
+    
+    .heroImage{
+        width: 72%;
+    }
+    
+}
