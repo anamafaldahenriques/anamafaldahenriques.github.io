@@ -3,6 +3,7 @@ html {
     height: 100%;
     -webkit-font-smoothing: antialiased;
     font-family: "athelas",serif;
+    background-color: #f7f7f7;
 }
 
 
@@ -12,6 +13,7 @@ body {
     margin-left: 100px;
     margin-right: 100px;
     font-family: "athelas",serif;
+    background-color: #f7f7f7;
 }
 
 h5{
@@ -28,10 +30,21 @@ a{
     font-weight: 400;
     letter-spacing: 0.04em;
     color: #808080;
+    -o-transition:0.5s;
+    -ms-transition:0.5s;
+    -moz-transition:0.5s;
+    -webkit-transition:0.5s;
+    transition:0.5s;
 }
 
 a:hover{
-    color: #808080;
+    color: #232323;
+    text-decoration: none;
+    -o-transition:0.5s;
+    -ms-transition:0.5s;
+    -moz-transition:0.5s;
+    -webkit-transition:0.5s;
+    transition:0.5s;
 }
 
 #bold{
@@ -75,6 +88,21 @@ td{
     vertical-align: bottom;
 }
 
+.mobileFooter{
+    display: none;
+    margin-top: 88px;
+    padding: 0px 16px 0px 16px;
+}
+
+::selection {
+  background: #e6e6e6; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #e6e6e6; /* Gecko Browsers */
+}
+
+
+
 /*Responsive*/
 
 @media only screen and (max-width: 768px) {
@@ -102,6 +130,22 @@ td{
     
     .heroImage{
         width: 72%;
+    }
+    
+    .footerWrapper{
+        display: none;
+    }
+    
+    .mobileFooter{
+        display: block;
+        position: fixed;
+        bottom: 56px;
+        right: 0;
+        left: 0;
+    }
+    
+    a{
+        padding: 10px;
     }
     
 }
