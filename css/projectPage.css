@@ -208,4 +208,8 @@
     object-fit: cover;
     object-position: center;
   }
+
+  .project-page-footer .next-project span {
+    display: none;
+  }
 }

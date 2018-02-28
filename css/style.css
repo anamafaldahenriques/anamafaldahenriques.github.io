@@ -243,6 +243,10 @@ logo a {
   color: var(--accentColor);
 }
 
+.page-list .active {
+  border-bottom: 2px solid var(--grayColor);
+}
+
 /*Footer*/
 
 .footer {
@@ -435,6 +439,7 @@ logo a {
 
   .footer {
     margin-top: 8vmin;
+    padding-bottom: 6vh;
   }
 
   .copyright {
