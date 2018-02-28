@@ -81,4 +81,9 @@ marquee p {
   .right-row {
     width: 100%;
   }
+
+  .left-row {
+    order: 2;
+    margin-top: 8vh;
+  }
 }
