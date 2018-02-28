@@ -1,0 +1,146 @@
+/*Journal Page*/
+
+.journal-item {
+  width: 100%;
+  object-fit: contain;
+  padding-bottom: 56px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.journal-item img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.journal-item .title {
+  margin-top: 2em;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--blackColor);
+}
+
+.journal-item .sub-title {
+  margin-top: 0.24em;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--blackColor);
+}
+
+.journal-item p {
+  color: var(--grayColor);
+}
+
+/*Filter*/
+
+.filter-wrapper ul {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-wrapper ul li {
+  list-style: none;
+  padding-bottom: 6px;
+}
+
+.filter-wrapper ul li p {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.filter-wrapper ul li a {
+  cursor: pointer;
+  color: var(--grayColor);
+}
+
+.filter-wrapper ul li a:hover {
+  color: var(--blackColor);
+}
+
+.active-filter {
+  color: var(--blackColor) !important;
+}
+
+/*Slider*/
+
+.journal-slider {
+  position: relative;
+}
+
+.journal-slider img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+.journal-slider button {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  height: 100%;
+  width: 50%;
+  min-width: 64px;
+}
+
+.button-left {
+  position: absolute;
+  left: 0%;
+  text-align: left;
+}
+
+.button-left:hover {
+  cursor: w-resize;
+}
+
+.button-right {
+  position: absolute;
+  right: 0%;
+  text-align: right;
+}
+
+.button-right {
+  cursor: e-resize;
+}
+
+/*Footer*/
+
+.project-page-footer {
+  align-items: center;
+  margin-top: 0;
+}
+
+.project-page-footer .up-arrow {
+  font-size: 2em;
+}
+
+.project-page-footer .next-project a {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.project-page-footer .next-project span {
+  padding-left: 14px;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 540px) {
+  .left-row {
+    display: none;
+  }
+
+  .right-row {
+    width: 100%;
+  }
+}

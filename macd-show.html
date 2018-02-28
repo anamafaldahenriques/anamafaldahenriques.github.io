@@ -3,10 +3,11 @@
 
 <head>
 
-  <title>Ana Mafalda</title>
+  <title>Books and the Human - Ana Mafalda</title>
 
   <!--CSS-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/projectPage.css">
 
   <!--Font-->
   <script src="https://use.typekit.net/rrl0dbs.js"></script>
@@ -31,14 +32,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@anamafaldah">
   <meta name="twitter:creator" content="@anamafaldah">
-  <meta name="twitter:title" content="Ana Mafalda">
-  <meta name="twitter:description" content="Portuguese Communication Designer.">
-  <meta name="twitter:image" content="http://www.anamafaldahenriques.com/homepage/window-display.jpg">
+  <meta name="twitter:title" content="MACD Degree Show">
+  <meta name="twitter:description" content="The MA Communication Design’s final exhibition is inspired by the process of clearing the lockers at the end of the academic year.">
+  <meta name="twitter:image" content="http://www.anamafaldahenriques.com/macd-show/folders-perspective.jpg">
 
 </head>
 
-<body>
+<body class="dark-theme">
   <!--Navigation-->
+  <div class="dark-theme-backround"></div>
   <section class="row nav">
     <div>
       <logo><a href="index.html">Ana Mafalda</a></logo>
@@ -46,7 +48,7 @@
     <div class="nav-pages">
       <ul>
         <li>
-          <a href="index.html" class="active">Projects</a>
+          <a href="index.html">Projects</a>
         </li>
         <li>
           <a href="journal.html">Journal</a>
@@ -94,7 +96,7 @@
     <div class="page-list">
       <ul>
         <li>
-          <a href="index.html" class="active">Projects</a>
+          <a href="index.html">Projects</a>
         </li>
         <li>
           <a href="journal.html">Journal</a>
@@ -106,90 +108,90 @@
     </div>
   </section>
 
-  <section class="row gallery">
-    <a class="gallery-link" href="#">
-      <div class="gallery-item" id="maynard">
-
+  <section class="row content-wrapper project-page">
+    <div class="left-row">
+      <ul>
+        <li>
+          <p class="title">
+            About
+          </p>
+        </li>
+        <li>
+          <p>
+            2015
+          </p>
+        </li>
+        <li>
+          <p>
+            Identity & Curation
+          </p>
+        </li>
+      </ul>
+      <div class="project-link">
+        <a target="_blank" href="http://2016.csmcommunicationdesign.com">
+          Visit website
+        </a>
       </div>
-      <div class="gallery-description">
+    </div>
+    <div class="right-row">
+      <p class="title">
+        MACD Degree Show
+      </p>
+      <p class="description">
+        The MA Communication Design’s final exhibition is inspired by the process of clearing the lockers at the end of the academic year. The things we found, were a picture of the journey we went through during the year: glue, scissors, and even champagne. These suspended objects invite visitors into a frozen moment in the students’ lives.
+      </p>
+      <div class="description-extended">
         <p>
-          Object Magazine<br />
-          coming soon
+          The project involved a small team working across curation, identity, space, web design and printed collateral.
+        </p>
+        <p>
+          Structure and materials across the gallery, divide the space into small compartments: each student’s locker. This time, the work is fully exposed. Between metal frames and whiteboards, the visitor is invited to step inside and interact with the pieces.
+        </p>
+        <p>
+          Designed in collaboration with Shuruti Vengatesh, Tommaso Russo, Aude Rouaux, Felix Guth, and Nils Braun.
+        </p>
+        <p>
+          Gallery photography: Di Cao.
         </p>
       </div>
-    </a>
-    <a class="gallery-link" href="books-and-the-human.html">
-      <div class="gallery-item" id="books-human">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Books and the Human
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="the-degenerative-press.html">
-      <div class="gallery-item" id="press">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          The Degenerative Press
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="ccccb.html">
-      <div class="gallery-item" id="ccccb">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          CCCCB
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="mapping-affective-spaces.html">
-      <div class="gallery-item" id="mapping">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Mapping Affective Spaces
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="macd-show.html">
-      <div class="gallery-item" id="macd">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          MACD Degree Show
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="digital-literacy.html">
-      <div class="gallery-item" id="digital-literacy">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Digital Literacy
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="book-covers.html">
-      <div class="gallery-item" id="book-covers">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Book Covers
-        </p>
-      </div>
-    </a>
+      <a onclick="openDescription()" class="read-more">Read More +</a>
+    </div>
   </section>
 
+  <section class="content-wrapper project-image-wrapper">
+    <div class="hero-img-wrapper">
+      <img src="img/macd/folder-collection.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/macd/glass.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/macd/space-1.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/macd/space-2.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/macd/folder-inside.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/macd/wall.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/macd/entrance.jpg" />
+    </div>
+  </section>
+
+  <!--Start Footer-->
+
+  <section class="content-wrapper row project-page-footer">
+    <div>
+      <a id="scrollTop" class="up-arrow">&#x25B2;</a>
+    </div>
+    <div class="next-project">
+      <a href="digital-literacy.html">next project<span>&#x25BA;</span></a>
+    </div>
+  </section>
 
   <!--Start Footer-->
 
@@ -218,8 +220,7 @@
   </section>
 
   <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
-  <script type="text/javascript" src="js/anim.js"></script>
-  <script type="text/javascript" src="js/scrollAnim.js"></script>
+  <script type="text/javascript" src="js/animDark.js"></script>
 
 </body>
 

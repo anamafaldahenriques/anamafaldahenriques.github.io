@@ -3,10 +3,11 @@
 
 <head>
 
-  <title>Ana Mafalda</title>
+  <title>CCCCB - Ana Mafalda</title>
 
   <!--CSS-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/projectPage.css">
 
   <!--Font-->
   <script src="https://use.typekit.net/rrl0dbs.js"></script>
@@ -31,9 +32,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@anamafaldah">
   <meta name="twitter:creator" content="@anamafaldah">
-  <meta name="twitter:title" content="Ana Mafalda">
-  <meta name="twitter:description" content="Portuguese Communication Designer.">
-  <meta name="twitter:image" content="http://www.anamafaldahenriques.com/homepage/window-display.jpg">
+  <meta name="twitter:title" content="CCCCB">
+  <meta name="twitter:description" content="Identity and wayfinding system for a new museum in Castelo Branco, Portugal. Developed at RMIDS, Information Design Studio.">
+  <meta name="twitter:image" content="http://www.anamafaldahenriques.com/ccccb/exit.jpg">
+
 
 </head>
 
@@ -46,7 +48,7 @@
     <div class="nav-pages">
       <ul>
         <li>
-          <a href="index.html" class="active">Projects</a>
+          <a href="index.html">Projects</a>
         </li>
         <li>
           <a href="journal.html">Journal</a>
@@ -94,7 +96,7 @@
     <div class="page-list">
       <ul>
         <li>
-          <a href="index.html" class="active">Projects</a>
+          <a href="index.html">Projects</a>
         </li>
         <li>
           <a href="journal.html">Journal</a>
@@ -106,90 +108,70 @@
     </div>
   </section>
 
-  <section class="row gallery">
-    <a class="gallery-link" href="#">
-      <div class="gallery-item" id="maynard">
-
-      </div>
-      <div class="gallery-description">
+  <section class="row content-wrapper project-page">
+    <div class="left-row">
+      <ul>
+        <li>
+          <p class="title">
+            About
+          </p>
+        </li>
+        <li>
+          <p>
+            2014
+          </p>
+        </li>
+        <li>
+          <p>
+            Wayfinding
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="right-row">
+      <p class="title">
+        CCCCB
+      </p>
+      <p class="description">
+        Designed for a new museum in Castelo Branco, Portugal. Developed at RMIDS, Information Design Studio. The project covers both the creation of the wayfinding system and identity.
+      </p>
+      <div class="description-extended">
         <p>
-          Object Magazine<br />
-          coming soon
+          The pictogram collection was born from a geometric grid, and defined by the human pictogram’s height.
         </p>
       </div>
-    </a>
-    <a class="gallery-link" href="books-and-the-human.html">
-      <div class="gallery-item" id="books-human">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Books and the Human
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="the-degenerative-press.html">
-      <div class="gallery-item" id="press">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          The Degenerative Press
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="ccccb.html">
-      <div class="gallery-item" id="ccccb">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          CCCCB
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="mapping-affective-spaces.html">
-      <div class="gallery-item" id="mapping">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Mapping Affective Spaces
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="macd-show.html">
-      <div class="gallery-item" id="macd">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          MACD Degree Show
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="digital-literacy.html">
-      <div class="gallery-item" id="digital-literacy">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Digital Literacy
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="book-covers.html">
-      <div class="gallery-item" id="book-covers">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Book Covers
-        </p>
-      </div>
-    </a>
+      <a onclick="openDescription()" class="read-more">Read More +</a>
+    </div>
   </section>
 
+  <section class="content-wrapper project-image-wrapper">
+    <div class="hero-img-wrapper">
+      <img src="img/ccccb/lift.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/ccccb/icon-collection.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/ccccb/skating.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/ccccb/directional.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/ccccb/exit.jpg" />
+    </div>
+  </section>
+
+  <!--Start Footer-->
+
+  <section class="content-wrapper row project-page-footer">
+    <div>
+      <a id="scrollTop" class="up-arrow">&#x25B2;</a>
+    </div>
+    <div class="next-project">
+      <a href="mapping-affective-spaces.html">next project<span>&#x25BA;</span></a>
+    </div>
+  </section>
 
   <!--Start Footer-->
 
@@ -219,7 +201,6 @@
 
   <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
   <script type="text/javascript" src="js/anim.js"></script>
-  <script type="text/javascript" src="js/scrollAnim.js"></script>
 
 </body>
 

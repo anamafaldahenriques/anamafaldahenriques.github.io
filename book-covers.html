@@ -3,10 +3,11 @@
 
 <head>
 
-  <title>Ana Mafalda</title>
+  <title>Book Covers - Ana Mafalda</title>
 
   <!--CSS-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/projectPage.css">
 
   <!--Font-->
   <script src="https://use.typekit.net/rrl0dbs.js"></script>
@@ -31,14 +32,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@anamafaldah">
   <meta name="twitter:creator" content="@anamafaldah">
-  <meta name="twitter:title" content="Ana Mafalda">
-  <meta name="twitter:description" content="Portuguese Communication Designer.">
-  <meta name="twitter:image" content="http://www.anamafaldahenriques.com/homepage/window-display.jpg">
+  <meta name="twitter:title" content="Austen Book Covers">
+  <meta name="twitter:description" content="The combination of typography, flower species and the arrangement itself illustrate each one of the heroines personalities.">
+  <meta name="twitter:image" content="http://www.anamafaldahenriques.com/book-covers/emma.jpg">
 
 </head>
 
-<body>
+<body class="dark-theme">
   <!--Navigation-->
+  <div class="dark-theme-backround"></div>
   <section class="row nav">
     <div>
       <logo><a href="index.html">Ana Mafalda</a></logo>
@@ -46,7 +48,7 @@
     <div class="nav-pages">
       <ul>
         <li>
-          <a href="index.html" class="active">Projects</a>
+          <a href="index.html">Projects</a>
         </li>
         <li>
           <a href="journal.html">Journal</a>
@@ -72,7 +74,7 @@
                   }
 
                   .cls-2 {
-                    fill: var(--grayColor);
+                    fill: var(--accentColor);
                   }
 
                   .cls-3 {
@@ -94,7 +96,7 @@
     <div class="page-list">
       <ul>
         <li>
-          <a href="index.html" class="active">Projects</a>
+          <a href="index.html">Projects</a>
         </li>
         <li>
           <a href="journal.html">Journal</a>
@@ -106,90 +108,65 @@
     </div>
   </section>
 
-  <section class="row gallery">
-    <a class="gallery-link" href="#">
-      <div class="gallery-item" id="maynard">
-
-      </div>
-      <div class="gallery-description">
+  <section class="row content-wrapper project-page">
+    <div class="left-row">
+      <ul>
+        <li>
+          <p class="title">
+            About
+          </p>
+        </li>
+        <li>
+          <p>
+            2015<br>
+            Graphic Design
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="right-row">
+      <p class="title">
+        Book Covers
+      </p>
+      <p class="description">
+        These flower arrangements represent socially regimented ideas of appropriate behavior factored in Austen’s work. The combination of typography,  flower species and the arrangement itself,  illustrate each one of the heroines personalities.
+      </p>
+      <div class="description-extended">
         <p>
-          Object Magazine<br />
-          coming soon
+          Emma Woodhouse, is a precocious and rich twenty-year-old who imagines herself to be naturally gifted in conjuring love matches.</p>
+        <p>
+          Elizabeth is Austen’s most beloved heroine, frank and fearless in her opinions.
+        </p>
+        <p>
+          Elinor is one of Austen’s most misunderstood heroines. Seen through the lens of modern sensibilities she is perceived as repressed.
         </p>
       </div>
-    </a>
-    <a class="gallery-link" href="books-and-the-human.html">
-      <div class="gallery-item" id="books-human">
-
+      <div>
+        <a onclick="openDescription()" class="read-more">Read More +</a>
       </div>
-      <div class="gallery-description">
-        <p>
-          Books and the Human
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="the-degenerative-press.html">
-      <div class="gallery-item" id="press">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          The Degenerative Press
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="ccccb.html">
-      <div class="gallery-item" id="ccccb">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          CCCCB
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="mapping-affective-spaces.html">
-      <div class="gallery-item" id="mapping">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Mapping Affective Spaces
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="macd-show.html">
-      <div class="gallery-item" id="macd">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          MACD Degree Show
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="digital-literacy.html">
-      <div class="gallery-item" id="digital-literacy">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Digital Literacy
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="book-covers.html">
-      <div class="gallery-item" id="book-covers">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Book Covers
-        </p>
-      </div>
-    </a>
+    </div>
   </section>
 
+  <section class="content-wrapper project-image-wrapper">
+    <div class="hero-img-wrapper">
+      <img src="img/book-covers/emma.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/book-covers/elizabeth.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/book-covers/elinor.jpg" />
+    </div>
+  </section>
+
+  <section class="content-wrapper row project-page-footer">
+    <div>
+      <a id="scrollTop" class="up-arrow">&#x25B2;</a>
+    </div>
+    <!-- <div class="next-project">
+      <a href="#">next project<span>&#x25BA;</span></a>
+    </div> -->
+  </section>
 
   <!--Start Footer-->
 
@@ -218,8 +195,7 @@
   </section>
 
   <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
-  <script type="text/javascript" src="js/anim.js"></script>
-  <script type="text/javascript" src="js/scrollAnim.js"></script>
+  <script type="text/javascript" src="js/animDark.js"></script>
 
 </body>
 

@@ -3,10 +3,11 @@
 
 <head>
 
-  <title>Ana Mafalda</title>
+  <title>Books and the Human - Ana Mafalda</title>
 
   <!--CSS-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/projectPage.css">
 
   <!--Font-->
   <script src="https://use.typekit.net/rrl0dbs.js"></script>
@@ -24,6 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!--Share Meta-->
+  <!--Share Meta-->
   <meta name="description" content="Ana Mafalda Henriques is a Portuguese Communication Designer. Through her practice she explores editorial, identity, information and web design.">
   <meta name="keywords" content="Design,Communication Design,Graphic Designer,Communication Designer,Graphic Design,Editorial,Art Direction,Lisbon,Ana Henriques, Portugal, Portuguese Designer,Information Design, London Designer, Identity, Branding, Wayfinding, Iconography, Signage, Magazine, User Interface, Exhibition Design, Research, Mapping, Generative Design, Dublin Designer">
 
@@ -31,14 +33,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@anamafaldah">
   <meta name="twitter:creator" content="@anamafaldah">
-  <meta name="twitter:title" content="Ana Mafalda">
-  <meta name="twitter:description" content="Portuguese Communication Designer.">
-  <meta name="twitter:image" content="http://www.anamafaldahenriques.com/homepage/window-display.jpg">
+  <meta name="twitter:title" content="Digital Literacy">
+  <meta name="twitter:description" content="Digital Literacy explores the nature of analog and digital reading platforms. An algorithm analyses the word frequency of literary works.">
+  <meta name="twitter:image" content="http://www.anamafaldahenriques.com/digital-literacy/collection-perspective.jpg">
 
 </head>
 
-<body>
+<body class="dark-theme">
   <!--Navigation-->
+  <div class="dark-theme-backround"></div>
   <section class="row nav">
     <div>
       <logo><a href="index.html">Ana Mafalda</a></logo>
@@ -46,7 +49,7 @@
     <div class="nav-pages">
       <ul>
         <li>
-          <a href="index.html" class="active">Projects</a>
+          <a href="index.html">Projects</a>
         </li>
         <li>
           <a href="journal.html">Journal</a>
@@ -94,7 +97,7 @@
     <div class="page-list">
       <ul>
         <li>
-          <a href="index.html" class="active">Projects</a>
+          <a href="index.html">Projects</a>
         </li>
         <li>
           <a href="journal.html">Journal</a>
@@ -106,90 +109,79 @@
     </div>
   </section>
 
-  <section class="row gallery">
-    <a class="gallery-link" href="#">
-      <div class="gallery-item" id="maynard">
-
-      </div>
-      <div class="gallery-description">
+  <section class="row content-wrapper project-page">
+    <div class="left-row">
+      <ul>
+        <li>
+          <p class="title">
+            About
+          </p>
+        </li>
+        <li>
+          <p>
+            2016
+          </p>
+        </li>
+        <li>
+          <p>
+            Research & Communication
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="right-row">
+      <p class="title">
+        Digital Literacy
+      </p>
+      <p class="description">
+        Digital Literacy explores the nature of analog and digital reading platforms. In this project, an algorithm analyses the word frequency of literary works. Using its output data, the program generates both synopsis and book cover. Linking digital concepts of keyword generation and hypertext to the classic physical book format.
+      </p>
+      <div class="description-extended">
         <p>
-          Object Magazine<br />
-          coming soon
+          The project challenges the subjectivity of the book cover design creative process.
+        </p>
+        <p>
+          The covers’ graphics all start at the centre of a square, with a single dot. A line is created in a random direction with a size proportional to the number of times the word is repeated in the book. From the most frequent to the least used ones.
+        </p>
+        <p>
+          Black lines represent names, verbs, and adjectives. On the back cover, the reader will find the Top 100 words in each book, acting as the synopsis.
         </p>
       </div>
-    </a>
-    <a class="gallery-link" href="books-and-the-human.html">
-      <div class="gallery-item" id="books-human">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Books and the Human
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="the-degenerative-press.html">
-      <div class="gallery-item" id="press">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          The Degenerative Press
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="ccccb.html">
-      <div class="gallery-item" id="ccccb">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          CCCCB
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="mapping-affective-spaces.html">
-      <div class="gallery-item" id="mapping">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Mapping Affective Spaces
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="macd-show.html">
-      <div class="gallery-item" id="macd">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          MACD Degree Show
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="digital-literacy.html">
-      <div class="gallery-item" id="digital-literacy">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Digital Literacy
-        </p>
-      </div>
-    </a>
-    <a class="gallery-link" href="book-covers.html">
-      <div class="gallery-item" id="book-covers">
-
-      </div>
-      <div class="gallery-description">
-        <p>
-          Book Covers
-        </p>
-      </div>
-    </a>
+      <a onclick="openDescription()" class="read-more">Read More +</a>
+    </div>
   </section>
 
+  <section class="content-wrapper project-image-wrapper">
+    <div class="hero-img-wrapper">
+      <img src="img/digital-literacy/collection-perspective.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/digital-literacy/cover-perspective.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/digital-literacy/synopsis.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/digital-literacy/process-book.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/digital-literacy/process4.jpg" />
+    </div>
+    <div class="center-img-wrapper">
+      <img src="img/digital-literacy/process.jpg" />
+    </div>
+  </section>
+
+  <!--Start Footer-->
+
+  <section class="content-wrapper row project-page-footer">
+    <div>
+      <a id="scrollTop" class="up-arrow">&#x25B2;</a>
+    </div>
+    <div class="next-project">
+      <a href="book-covers.html">next project<span>&#x25BA;</span></a>
+    </div>
+  </section>
 
   <!--Start Footer-->
 
@@ -218,8 +210,7 @@
   </section>
 
   <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
-  <script type="text/javascript" src="js/anim.js"></script>
-  <script type="text/javascript" src="js/scrollAnim.js"></script>
+  <script type="text/javascript" src="js/animDark.js"></script>
 
 </body>
 
