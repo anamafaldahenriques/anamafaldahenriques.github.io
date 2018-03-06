@@ -14,7 +14,7 @@ body {
 
 :root {
   --blackColor: #151515;
-  --darkThemeColor: #1f1f1f;
+  --darkThemeColor: #000;
   --grayColor: #b5b4b4;
   --accentColor: #ff7730;
   --offWhiteColor: #f2f2f2;
