@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head> 
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>The Degenerative Press</title>
+        <link rel="icon" type="image/png" href="img/icons/favicon.ico">
+        <!--CSS-->
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <!--Meta-->
+        
+        <meta property="og:title" content="The Degenerative Press"/>
+        <meta property="og:description" content="An algorithm hacks banned and censored classics, recombining words original position. The project explores unseen violence and literary censorship." />
+        <meta property="og:url" content="http://degenerativepress.com" />
+        <meta property="og:image" content="http://degenerativepress.com/img/social/degenerative.png" />
+        
+        <!--Twitter Card-->
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@TheDegenerative">
+        <meta name="twitter:creator" content="@TheDegenerative">
+        <meta name="twitter:title" content="The Degenerative Press">
+        <meta name="twitter:description" content="An algorithm hacks banned and censored classics, recombining words original position. The project explores unseen violence and literary censorship.">
+        <meta name="twitter:image" content="http://degenerativepress.com/img/social/degenerative.png">
+        
+    </head>
+    
+<body>
+    
+    <section id="screensaver">
+    
+    </section>
+    
+    <section class="contentWrapper">
+        <header>
+            <nav class="navbar" role="navigation">
+                <div class="navBrand">
+                    <a href="/index.html">The Degenerative Press</a>
+                </div>
+                <ul class="navRight">
+                  <a href="about.html">About</a>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="guide">
+<!--            <h2>Choose to Degenerate</h2>-->
+        </section>
+        
+        <section class="formWrapper">
+            
+            <div class="cover text-center formCover">
+
+                <div id="titleWrapp">
+                    <p id="title">Degenerate</p>
+                </div>
+                <p id="subtitle">Your Own Words</p>
+                <form>
+                    <textarea onkeyup="characterNumber()" value="today" placeholder="Type your text here - min 100 characters" id="textArea" class="textArea" autofocus>
+</textarea><br /><p id="characterWrapper"> <span id="characters">0</span> Characters</p>
+                    <div class="actionRow">
+                    <input onclick="changeWords()" type="button" id="degen" value="Degenerate">
+                    </div>
+                </form>
+                
+            </div>
+             
+        </section>
+    </section>
+</body>
+    
+<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () { $('body').hide().fadeIn(1500).delay(6000)});
+    
+</script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/words.js"></script> 
+</html>

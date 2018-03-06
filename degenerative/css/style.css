@@ -1,0 +1,787 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Athelas', serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+body {
+	width: 100%;
+    font-family: 'Athelas', serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    -webkit-print-color-adjust: exact;
+}
+
+#screensaver{
+    position: fixed;
+    display: none;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+h2{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    margin: 0;
+}
+
+h3{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    margin: 0;
+    font-weight: 800;
+    line-height: 22px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+p{
+    font-size: 12px;
+    color: #4d4d4d;
+}
+
+a{
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    margin: 0;
+    transition: 0.6s;
+    -webkit-transition: 0.6;
+    -moz-transition: 0.6s;
+}
+
+a:hover{
+    color: black;
+    text-decoration: none;
+    text-decoration: line-through;
+    transition: 0.6s;
+    -webkit-transition: 0.6;
+    -moz-transition: 0.6s;
+}
+
+a:focus{
+    color: black;
+    text-decoration: none;
+    text-decoration: line-through;
+    transition: 0.6s;
+    -webkit-transition: 0.6;
+    -moz-transition: 0.6s;
+}
+
+.contentWrapper{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mainPage .cover{
+    background-color: white;
+    transition: 0.6s;
+}
+
+.mainPage .cover:hover{
+    background-color: white;
+    transform: scale(1.04);
+    transition: 0.6s;
+}
+
+.mainLink{
+    text-decoration: none;
+}
+
+.mainLink:hover{
+    text-decoration: none;
+}
+
+/*Start Navigation*/
+
+header{
+    padding-top: 32px;
+}
+
+.navBrand{
+    width: 48%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 11px;
+}
+
+.navBrand a{
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    margin: 0;
+}
+
+.navRight{
+    float: right;
+    margin-top: -18px;
+}
+
+#gallery{
+    margin-left: 24px !important;
+}
+
+
+/*Start Hero Section*/
+
+
+.heroWrapper{
+    width: 100%;
+    margin-top: 48px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.heroImg{
+    width: 200px;
+}
+
+.guide{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.guide > h2{
+    text-align: center !important;
+    font-size: 13px;
+    color: black;
+    text-transform: capitalize;
+}
+
+
+a .heroImg{
+    margin-bottom: 32px;
+    transition: 0.6s ease;
+    transition-property: transform;
+}
+
+a:hover .heroImg{
+    transform: scale(1.04,1.04);
+    opacity: 0.9;
+}
+
+
+/*Start Footer*/
+
+
+.footer{
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 100px;
+}
+
+.footerWrapper{
+    float: right;
+}
+
+#email{
+    margin-left: 24px;
+}
+
+/*new cover layout*/
+
+.comment{
+    position: absolute;
+    margin-top: 64px;
+    float: left;
+}
+
+.comment > h2{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.commentTable{
+    margin-top: 16px;
+    margin-left: 2px;
+}
+
+.commentTable > tr > td{
+    vertical-align: top !important;
+}
+
+#titleWrapp{
+    margin-left: 92px;
+    margin-right: 92px;
+}
+
+#title{
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 56px;
+    text-transform: uppercase;
+    color: #1c1c1c;
+}
+
+#subtitle{
+    font-size: 12px;
+    margin-top: -5px;
+    padding-top: 0px;
+    font-style: italic;
+    color: #1c1c1c;
+}
+
+#text{
+    padding-right: 32px;
+    padding-left: 32px;
+    font-size: 10px;
+    text-transform: none;
+    color: #1c1c1c;
+}
+
+#text:first-letter{
+    text-transform: capitalize;
+}
+
+#coverImage{
+    height: 180px;
+    mix-blend-mode: multiply !important;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#in{
+    margin-top: 16px;
+    font-size: 9px;
+    text-transform: lowercase;
+    margin-bottom: 16px;
+    color: #1c1c1c;
+}
+
+#author{
+    font-size: 9px;
+    margin-bottom: 24px;
+    color: #1c1c1c;
+    
+}
+
+#collection{
+    text-transform: capitalize;
+    font-size: 8px;
+    color: #1c1c1c; 
+}
+
+#newContainer{
+    justify-content: flex-end;
+}
+
+.cover{
+    background-color: #F2F2F2;
+    width: 320px;
+    height: 480px;
+    background-color: !important;
+}
+
+.coverCont{
+    margin-top: -32px !important;
+}
+
+#counter{
+    border-bottom: 2px solid red;
+    font-size: 18px;
+}
+
+#degenerate{
+    background-color: transparent;
+    border: 1px solid #1c1c1c;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.4s ease;
+}
+
+#degenerate:hover{
+    background-color: #1c1c1c;
+    color: white;
+    transition: 0.4s ease;
+}
+
+#degenerate:focus{
+    outline: none;
+    background-color: #1c1c1c;
+    color: white;
+    transition: 0.4s ease;
+}
+
+#degenerate:active{
+    outline: none;
+    background-color: #1c1c1c;
+    color: white;
+    transition: 0.4s ease;
+}
+
+
+#print{
+    background-color: transparent;
+    border: 1px solid #1c1c1c;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.4s ease;
+    margin-left: 8px;
+}
+
+#print:hover{
+    background-color: #1c1c1c;
+    color: white;
+    transition: 0.4s ease;
+}
+
+#print:focus{
+    outline: none;
+    background-color: #1c1c1c;
+    color: white;
+    transition: 0.4s ease;
+}
+
+#print:active{
+    outline: none;
+    background-color: #1c1c1c;
+    color: white;
+    transition: 0.4s ease;
+}
+
+.actionRow{
+    margin-top: 16vh;
+}
+
+#twitter{
+    background-color: transparent;
+    border: 1px solid #1c1c1c;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.4s ease;
+    margin-left: 8px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    text-transform: none;
+    color: #1c1c1c;
+}
+
+#twitter:hover{
+    background-color: #1c1c1c;
+    color: white;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+#divider{
+    width: 24px;
+    border-color: #4d4d4d;
+    margin-top: 48px;
+}
+
+#twitter:focus{
+    outline: none;
+    background-color: #1c1c1c;
+    color: white;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+#twitter:active{
+    outline: none;
+    background-color: #1c1c1c;
+    color: white;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+
+#about{
+    text-decoration: line-through;
+}
+
+.actionWrapper{
+    text-align: left;
+    margin-top: 32px;
+}
+
+.actionWrapper>h2{
+    margin-top: 24px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.loader{
+    position: fixed;
+    z-index: 1000;
+}
+
+#aboutTable{
+    margin-bottom: 80px;
+}
+
+.mainCover #titleWrapp #title{
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.mainCover #subtitle{
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.mainCover #author{
+    margin-top: 240px;
+}
+
+.mainCover #collection{
+    margin-top: 80px;
+}
+
+.formCover #titleWrapp #title{
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.formCover #subtitle{
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.formCover #author{
+    margin-top: 240px;
+}
+
+.formCover #collection{
+    margin-top: 80px;
+}
+
+.formWrapper{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.formCover{
+    position: fixed;
+    margin: 0 auto;
+    width: 800px;
+    background-color: white;
+    bottom: 0px;
+    height: 80vh;
+}
+
+.textArea{
+    width: 80%;
+    margin-top: 40px;
+    border: none;
+    height: 30vh;
+    color: #444;
+}
+
+.textArea:focus{
+    outline: none;
+}
+
+
+#share{
+    background-color: transparent;
+    border: 1px solid #1c1c1c;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.4s ease;
+    margin-left: 8px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    text-transform: none;
+    color: #1c1c1c;
+}
+
+#share:hover{
+    background-color: #1c1c1c;
+    color: white;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+#degen{
+    background-color: transparent;
+    border: 1px solid #1c1c1c;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.4s ease;
+    margin-left: 8px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    text-transform: none;
+    color: #1c1c1c;
+}
+
+#degen:hover{
+    background-color: #1c1c1c;
+    color: white;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+#characterWrapper{
+    color: #999;
+}
+
+.bookNav{
+    margin-top: 24px;
+}
+
+#bookTitle{
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#bookTitle:hover > .bookPicker{
+    opacity: 1;
+    visibility: visible;
+    height: 48px;
+    cursor: pointer;
+}
+
+.bookPicker{
+    list-style-type: none;
+    margin-top: 4px;
+    margin-left: 8px;
+    opacity: 0;
+    transition: 0.4s;
+    padding-left: 0;
+    visibility: hidden;
+    height: 0;
+}
+
+.bookPicker li{
+    line-height: 18px;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .cover, .cover * {
+        visibility: visible;
+    }
+    .cover {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+}
+
+/*Responsive*/
+
+@media screen and (min-width: 1440px){
+    
+    .contentWrapper{
+        max-width: 1024px;
+        margin: 0 auto;
+    }   
+    
+    .comment > h2{  
+        font-size: 16px;
+    }
+    
+    #bookTitle{
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .coverCont{
+        margin-top: 120px;
+        padding-top: 80px;
+    }
+    
+    .mainPage .cover{
+        background-color: white;
+        width: 400px;
+        height: 600px;
+    }
+    
+    .cover{
+        width: 400px;
+        height: 600px; 
+    }
+    
+    #title{
+        padding-top: 56px;
+    }
+    
+    #coverImage{
+        height: 264px;
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+    
+    #text{
+        font-size: 12px;
+        padding-right: 48px;
+        padding-left: 48px;
+    }
+    
+    .footer{
+        max-width: 1024px;
+    }
+    
+    .mainCover #titleWrapp #title{
+        font-size: 14px;
+        font-weight: 300;
+        font-style: italic;
+        padding-top: 80px;
+    }
+
+    .mainCover #subtitle{
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+    
+    .mainCover #author{
+        margin-top: 320px;
+        font-size: 12px;
+    }
+
+    .mainCover #collection{
+        margin-top: 80px;
+        font-size: 10px;
+    }
+    
+    .formWrapper{
+        width: 800px;
+        margin: 0 auto;
+        margin-top: 48px;
+    }
+
+    .formCover{
+        position: fixed;
+        margin: 0 auto;
+        width: 800px;
+        background-color: white;
+        bottom: 0px;
+        height: 80vh;
+    }
+    
+    .formCover #titleWrapp #title{
+        font-size: 14px;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    .formCover #subtitle{
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+    .aboutTable{
+        width: 600px;
+    }
+    
+    #aboutTable tr td p{
+        font-size: 14px;
+    }
+    
+     #aboutTable tr td h3{
+        font-size: 14px;
+    }
+    
+    .followTable{
+        margin-bottom: 80px;
+    }
+    
+    p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .contentWrapper{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
+    .heroImg{
+        width: 280px;
+    }
+    
+    .navBrand{
+        width: 48%;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 11px;
+        margin-left: 0;
+    }
+    
+    .heroWrapper{
+        margin-top: 48px;
+    }
+    
+    #newContainer{
+        margin-top: 456px;
+        justify-content: center;
+    }
+    
+    .footer{
+        margin-right: 24px;
+        padding: 16px;
+        padding-bottom: 32px;
+        margin-top: 72px;
+    }
+    
+    .guide > h2{
+        font-size: 15px;
+    }
+    
+    #degenerative{
+        transition: none;
+    }
+    
+    #aboutTable{
+        width: 90%;
+        margin-bottom: 80px;
+    }
+    
+    .formWrapper{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+    .formCover{
+        position: fixed;
+        margin: 0 auto;
+        width: 90%;
+        background-color: white;
+        bottom: 0px;
+        height: 76vh;
+    }
+
+    .textArea{
+        width: 80%;
+        margin-top: 40px;
+        border: none;
+        height: 30vh;
+        color: #444;
+    }
+}
+    
+}
