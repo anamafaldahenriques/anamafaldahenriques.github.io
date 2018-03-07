@@ -435,6 +435,7 @@ logo a {
 
   .mobile-show {
     display: block;
+    margin-top: -20px;
   }
 
   .footer {
